@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  for(let i=1;i<=5;i++){
+    for(let j=1;j<=i;j++){
+      document.write("*");
+    }document.write("<br>");
+  }
+  document.write("<br><br>");
+
+  for(let i=1;i<=5;i++){
+    for(let j=5;j>=i;j--){
+      document.write("*");
+    }document.write("<br>");
+  }
+  document.write("<br><br>");
+
+let result = "";
+for(let i=1;i<=5;i++){
+  result += "&nbsp;&nbsp".repeat(5 - i) + "*".repeat(i) + "<br>";
+}
+document.write(result + "<br>");
+
+  document.write("<br><br>");
+
+  let result1 = "";
+  for(let i=5;i>=1;i--){
+    result1 += "&nbsp;&nbsp".repeat(5 - i) + "*".repeat(i) + "<br>";
+  }
+  document.write(result1 + "<br>");
+
+</script>
 </body>
 </html>
